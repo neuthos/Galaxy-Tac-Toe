@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.container {
+  margin: 70px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #456268;
+}
+
+.title {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.title span {
+  color: #a7c5eb;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: #f05454;
+}
+
+.status {
+  color: #f05454;
+}
+
+.gameGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+  background-color: #627579;
+}
+
+.kotak {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #456268;
+  cursor: pointer;
+}
+
+.x::after {
+  content: "🪐";
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.o::after {
+  content: "🌎";
+  font-size: 50px;
+  color: #f05454;
+}
